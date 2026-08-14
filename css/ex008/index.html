@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        .container{
+            background-color: rgb(8, 241, 67);
+            display: flex;  /*deixa as div uma do lado da outra*/
+            flex-direction: column; /*deixa as div em coluna*/
+            flex-direction: row;    /*deixa em linha*/
+        }
+
+        .container > div{   /*seleciona todas as divs dentro da classe */
+
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+            flex: auto;     /*responsividade*/
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div>Exemplo item A</div>
+        <div>Exemplo item B</div>
+        <div>Exemplo item C</div>
+        <div>Exemplo item D</div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox2</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container{
+            margin-bottom: 20px;
+            background-color: blueviolet;
+            display: flex;
+            justify-content:flex-start;
+            height: 100px;
+            align-items: start;
+        }
+        
+
+        #tipo1{
+            justify-content: flex-end;
+        }
+
+        #tipo2{
+            justify-content: center;
+        }
+
+        #tipo3{
+            justify-content: space-around;
+        }
+
+        #tipo4{
+            justify-content: space-between;
+        }
+
+        #tipo5{
+            justify-content: space-evenly;
+        }
+
+        .item{
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+        <div class="item">Item D</div>
+        <div class="item">Item E</div>
+    </div>
+
+    <div id="tipo1" class="container">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+        <div class="item">Item D</div>
+        <div class="item">Item E</div>
+    </div>
+
+    <div id="tipo2" class="container">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+        <div class="item">Item D</div>
+        <div class="item">Item E</div>
+    </div>
+
+    <div id="tipo3" class="container">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+        <div class="item">Item D</div>
+        <div class="item">Item E</div>
+    </div>
+
+    <div id="tipo4" class="container">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+        <div class="item">Item D</div>
+        <div class="item">Item E</div>
+    </div>
+
+    <div id="tipo5" class="container">
+        <div class="item">Item A</div>
+        <div class="item">Item B</div>
+        <div class="item">Item C</div>
+        <div class="item">Item D</div>
+        <div class="item">Item E</div>
+    </div>
+
+    
+
+
+</body>
+
+</html>
