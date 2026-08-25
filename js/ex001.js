@@ -23,4 +23,4 @@ let PossoIrPraia = true
 //console.log(typeof PossoIrPraia)
 
 console.log("O nome é: " + nomePessoa + " / seu numero é: " + numero)
-console.log($={numero})
+
