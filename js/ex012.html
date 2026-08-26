@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .soma {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>somando valores</h1>
+
+    <input type="number" id="numero1"> +
+    <input type="number" id="numero2">
+
+    <input id="botao" type="button" value="somar">
+
+    <p id="res">resultado</p>
+
+    <script>
+        function somarValores() {
+            let numero1 = document.getElementById('numero1').value
+            let numero2 = document.getElementById('numero2').value
+            let resultado = document.getElementById('res')
+          
+
+          
+
+            let soma = Number(numero1) + Number(numero2)
+
+            console.log(soma)
+
+            let resultadoElemento = document.getElementById('res')
+
+           resultadoElemento.innerHTML = `${numero1} + ${numero2} = <strong>${soma}</strong>`
+            if (soma > 100) {
+               resultadoElemento.style.backgroundColor = "green"
+            } else {
+               resultadoElemento.style.backgroundColor = "red"
+            }
+
+
+           
+                
+            
+        }
+        let botaoSomar = document.getElementById('botao')
+        botaoSomar.addEventListener('click', somarValores)
+    </script>
+</body>
+
+</html>
