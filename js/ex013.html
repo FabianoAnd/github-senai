@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: beige;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .radio,
+        .check {
+            width: 10%;
+        }
+
+        #botao {
+            padding: 5px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            border: none;
+
+        }
+
+        #botao:hover {
+            background-color: rgb(0, 0, 184);
+        }
+    </style>
+</head>
+
+<body>
+    <form id="formulario">
+        <h1>Formulario</h1>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Example@gmail.com">
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="digite sua idade">
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="">Periodo:</label>
+        <input type="radio" name="periodo" class="radio" value="1">Manhã
+        <input type="radio" name="periodo" class="radio" value="2">Tarde
+        <input type="radio" name="periodo" class="radio" value="3">Noite
+
+        <label for="">Atividades:</label>
+        <input type="checkbox" name="atividades" class="check">Bike
+        <input type="checkbox" name="atividades" class="check">Corrida
+        <input type="checkbox" name="atividades" class="check">Natação
+
+        <input type="submit" value="Enviar" id="botao">
+
+    </form>
+
+    <script>
+
+        let form = document.getElementById('formulario')
+
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault() // previne o comportamento padrao
+            console.log("O FORM FOI ENVIADO!")
+            let nome1 = document.getElementById('nome').value
+            alert(`${nome1} seu formulario foi enviado com sucesso!`)
+            form.reset()
+            //VALIDA SE O USUARIO JA EXISTE NO BANCO
+            // SE NAO EXISTE, CADASTRA
+
+        })
+    </script>
+</body>
+
+</html>
